@@ -1,0 +1,113 @@
+.card, .guest-details, .daily-overview {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .daily-overview h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.25rem;
+  }
+  
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-box {
+    flex: 1;
+    min-width: 140px;
+    background: #f8f9fb;
+    border-radius: 14px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: inset 0 0 0 1px #e0e0e0;
+    transition: background 0.3s ease;
+  }
+  
+  .stat-box:hover {
+    background: #f1f3f7;
+  }
+  
+  .stat-box.reservations {
+    border-left: 5px solid #4c6ef5;
+  }
+  .stat-box.guests {
+    border-left: 5px solid #2b8a3e;
+  }
+  .stat-box.vips {
+    border-left: 5px solid #ffa94d;
+  }
+  .stat-box.occasion {
+    border-left: 5px solid #e64980;
+  }
+  
+  .stat-box h3 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .dietary-summary {
+    margin-top: 1.8rem;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  
+  .tag, .diet-tag {
+    padding: 0.4rem 0.8rem;
+    background-color: #edf2ff;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #2f3e7e;
+  }
+  
+  .tag.gluten-free {
+    background-color: #ffe9e9;
+    color: #c0392b;
+  }
+  
+  .tag.nut-free {
+    background-color: #e6ffed;
+    color: #2f8f3e;
+  }
+  
+  .alert {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffca2c;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #856404;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .stats-container {
+      flex-direction: column;
+    }
+  }
+  

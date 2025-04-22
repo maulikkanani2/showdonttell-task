@@ -1,0 +1,89 @@
+.reservation-list {
+    margin: 2rem 0;
+  }
+  .reservation-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .guest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+    .guest-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 240px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .guest-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  .guest-card.selected {
+    border-color: #4f46e5;
+    background-color: #f0f4ff;
+  }
+  .guest-card.vip {
+    border-left: 5px solid #ffd700;
+  }
+  
+    .guest-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .party-size {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+    .guest-highlights {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .highlight {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .highlight.vip {
+    background-color: #fff8cc;
+    color: #b8860b;
+  }
+  .highlight.occasion {
+    background-color: #fde2e2;
+    color: #c62828;
+  }
+  .highlight.returning {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+  .highlight.dietary {
+    background-color: #e1fbe4;
+    color: #2e7d32;
+  }
+  
+    @media (max-width: 768px) {
+    .guest-list {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .guest-card {
+      width: 100%;
+    }
+  }
+  
